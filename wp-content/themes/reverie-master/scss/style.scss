@@ -11,8 +11,15 @@
 
 // Comment out this import if you are customizing you imports below
 @import "foundation";
-
+@import "compass/css3";
 /* Start to customize Reverie */
+
+//MIXINS
+@mixin darkside($bg,$per){
+	background:darken($bg,$per);
+	@include transition-property(background);
+	@include transition-duration(0.2s);
+}
 
 // add some extra style to row to beautify custom background image
 header.row,
@@ -134,4 +141,249 @@ figure.alignleft.figure {
 
 .no-margin{
 	margin: 0;
+}
+
+.whitetxt{
+	color: #fff;
+}
+
+.graytxt{
+	color: #909090;
+}
+
+.date{
+	font-size: 13px;
+}
+
+.pd-10{
+	padding:0 10px;
+	h2{
+		margin-bottom: 3px;
+	}
+	a{
+		font-size: 13px;
+	}
+}
+
+.internalbg{
+	background:#E7E8DE;
+}
+
+//1. header
+header.main{
+	background: #E7E8DE url('../img/home.png') no-repeat scroll top center;
+	width: 100%;
+	height: 666px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	&.internal{
+		position: relative;
+		background: url('../img/bg-internal.png') no-repeat scroll top center;
+		height: 202px; 
+		.inner-title{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+
+.top-bar-section > ul > .divider{
+	border-right: solid 1px white;
+	border-left: solid 1px white;
+}
+
+
+nav.top-bar{
+	position: relative;
+	top: 32px;
+}
+.top-bar-section ul li.active > a{
+	background: #fff;
+	color: darken(#061d36,30%);
+}
+
+.top-bar-section .dropdown{
+	background: #6f6f6f;
+	padding-top: 25px;
+	&:after{
+		content:' ';
+		width: 0; 
+		height: 0; 
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+		border-top: 15px solid #fff;
+		text-align: center;
+		position: absolute;
+		left: 40%;
+		top: 0;
+	};
+	li{
+		a{
+			font-size: .9em;
+		}
+	}
+}
+
+.lang{
+	li{
+		text-align: right;
+		a{
+			font-size: .75em;
+			text-align: right;
+			position: relative;
+			top: 8px;
+		}
+	}
+}
+
+.main-text{
+	position: relative;
+	top: 170px;
+	height: 414px;
+}
+
+a.button{
+	background: #1c90a3;
+	&:hover{
+		background: darken(#1c90a3,10%);
+	};
+}
+
+.arrow{
+	margin-left: 35px;
+	margin-top: 10px;
+	&:before{
+		display: inline-block;
+		content: url('../img/arrow.png');
+		background: #1c90a3;
+		width: 30px;
+		height: 34px;
+		position: absolute;
+		left: -32px;
+		top: 0;
+		padding-top: 3px;
+	}
+}
+
+.banner{
+	margin-bottom: 50px;
+}
+
+.it{
+	display: block; 
+	@include single-box-shadow;
+	height: 492px;
+	li{
+		min-height: 246px;
+		p{
+			color: rgba(255,255,255,0.5);
+			line-height: 1.4;
+			font-size: 13px;
+			margin-bottom: 10px;
+		}
+		img{
+			height: 246px;
+			width: 100%;
+		}
+		&.blue{
+			background: #1D7E92;
+			padding: 20px 30px;
+			&:hover{
+				@include darkside(#1D7E92,6%);
+			}
+		}
+		&.orange{
+			background: #DE6C0C;
+			padding: 20px 30px;
+			&:hover{
+				@include darkside(#DE6C0C,6%);
+			}
+		}
+		&.red{
+			background: #DF3A2B;
+			padding: 20px 30px;
+			&:hover{
+				@include darkside(#DF3A2B,6%);
+			}
+		}
+		&.green{
+			background: #219072;
+			padding: 20px 30px;
+			&:hover{
+				@include darkside(#219072,6%);
+			}
+		}
+	}
+}
+
+.connect{
+	margin-top: 40px;
+	li{
+		height: 60px;
+		line-height: 60px;
+		background: #C9C9C9;
+		margin: 0;
+		padding: 0 10px;
+		width: 24.5%;
+		text-align: center;
+		font-size: 16px;
+		a{
+			span{
+				width: 28px;
+				height: 26px;
+				display: inline-block;
+				position: relative;
+				top: 8px;
+				margin-right: 5px;
+				&.face{
+					background: url('../img/facebook.png') no-repeat scroll top left;
+				}
+				&.twitter{
+					background: url('../img/twitter.png') no-repeat scroll top left;
+				}
+				&.linkdn{
+					background: url('../img/linkedn.png') no-repeat scroll top left;
+				}
+			}
+		}
+		&:first-child{
+			margin-left: 20px;
+		};
+		&:hover{
+			background: #b3b3b3;  
+			position: relative;
+			a{
+				color: #fff;
+			}
+		}
+		&.active{
+			background: #5C5C5C;
+			position: relative;
+			a{
+				color: #fff;
+			}
+			&:after{
+				content:' ';
+				height: 0;
+				width: 0;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+				border-left: 15px solid #5C5C5C;
+				position: absolute;
+				right: -10px;	
+				top: 20px;
+			}
+		}
+	}
+}
+
+
+
+footer{
+	position: relative;
+	top: 50px;
+	ul{
+		list-style-type: none;
+	}
 }

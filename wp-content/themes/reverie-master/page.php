@@ -1,6 +1,5 @@
-<?php get_header(); ?>
-
-<!-- Row for main content area static-front -->
+<?php  get_header( 'empresa' ); ?>
+<!-- Row for main content area default-template -->
 	<div class="small-12 large-8 columns" role="main">
 	
 	<?php /* Start loop */ ?>

@@ -52,9 +52,9 @@ $em-base: 16 !default;
 $default-float: left;
 
 // $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
+   $body-font-color: #474747;
+   $body-font-family: 'Open Sans', sans-serif;
+   $body-font-weight: 300;
 // $body-font-style: normal;
 
 // Font-smoothing
@@ -67,7 +67,7 @@ $default-float: left;
 
 // Colors
 
-// $primary-color: #2ba6cb;
+   $primary-color: #061D36;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -138,7 +138,7 @@ $default-float: left;
 //
 
 // $row-width: emCalc(1000);
-// $column-gutter: emCalc(30);
+   $column-gutter: emCalc(20);
 // $total-columns: 12;
 
 //
@@ -148,7 +148,7 @@ $default-float: left;
 // We use this to control the maximum number of block grid elements per row
 
 // $block-grid-elements: 12;
-// $block-grid-default-spacing: emCalc(20);
+   $block-grid-default-spacing: emCalc(0);
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
 
@@ -160,13 +160,13 @@ $default-float: left;
 
 // Control header font styles
 
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
+   $header-font-family: 'Open Sans', sans-serif; 
+   $header-font-weight: 400;
 // $header-font-style: normal;
-// $header-font-color: #222;
-// $header-line-height: 1.4;
+   $header-font-color: #494949;
+   $header-line-height: 1.2;
 // $header-top-margin: .2em;
-// $header-bottom-margin: .5em;
+   $header-bottom-margin: .3em;
 // $header-text-rendering: optimizeLegibility;
 
 // Control header font sizes
@@ -180,11 +180,11 @@ $default-float: left;
 
 // Control how subheaders are styled.
 
-// $subheader-line-height: 1.4;
-// $subheader-font-color: lighten($header-font-color, 30%);
-// $subheader-font-weight: 300;
+   $subheader-line-height: 1.2;
+   $subheader-font-color: #061D35;
+   $subheader-font-weight: 200;
 // $subheader-top-margin: .2em;
-// $subheader-bottom-margin: .5em;
+   $subheader-bottom-margin: .3em;
 
 // A general <small> styling
 
@@ -194,10 +194,10 @@ $default-float: left;
 // Style paragraphs
 
 // $paragraph-font-family: inherit;
-// $paragraph-font-weight: normal;
-// $paragraph-font-size: 1em;
-// $paragraph-line-height: 1.6;
-// $paragraph-margin-bottom: emCalc(20);
+   $paragraph-font-weight: 300;
+   $paragraph-font-size: .9em;
+   $paragraph-line-height: 1.4;
+   $paragraph-margin-bottom: emCalc(10);
 // $paragraph-aside-font-size: emCalc(14);
 // $paragraph-aside-line-height: 1.35;
 // $paragraph-aside-font-style: italic;
@@ -363,7 +363,7 @@ $default-float: left;
 // $button-font-tny: emCalc(11);
 // $button-font-sml: emCalc(13);
 // $button-font-lrg: emCalc(20);
-// $button-font-weight: bold;
+   $button-font-weight: normal;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
@@ -372,7 +372,7 @@ $default-float: left;
 
 // We use these to control button border styles.
 
-// $button-border-width: 1px;
+   $button-border-width: 0px;
 // $button-border-style: solid;
 
 // We use this to set the default radius used throughout the core.
@@ -1234,11 +1234,11 @@ $default-float: left;
 
 // Background color for the top bar
 
-// $topbar-bg: #111;
+   $topbar-bg: #fff;
 
 // Height and margin
 
-// $topbar-height: 45px;
+   $topbar-height: 45px;
 // $topbar-margin-bottom: emCalc(30);
 
 // Control Input height for top bar
@@ -1252,22 +1252,22 @@ $default-float: left;
 
 // Style the top bar dropdown elements
 
-// $topbar-dropdown-bg: #222;
-// $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: lighten($topbar-bg, 5%);
+   $topbar-dropdown-bg: #6f6f6f;
+   $topbar-dropdown-link-color: #fff;
+   $topbar-dropdown-link-bg: #6f6f6f;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.5;
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
-// $topbar-link-color-active: #fff;
-// $topbar-link-weight: bold;
-// $topbar-link-font-size: emCalc(13);
+   $topbar-link-color: #061D36;
+   $topbar-link-color-hover: darken(#061D36, 15%);
+// $topbar-link-color-active: lighten(#002746, 5%);
+   $topbar-link-weight: 200;
+   $topbar-link-font-size: emCalc(19);
 // $topbar-link-hover-lightness: -30%; // Darken by 30%
-// $topbar-link-bg-hover: darken($topbar-bg, 3%);
+   $topbar-link-bg-hover: #fff;
 // $topbar-link-bg-active: darken($topbar-bg, 3%);
 
 // $topbar-dropdown-label-color: #555;

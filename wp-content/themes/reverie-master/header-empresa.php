@@ -39,7 +39,7 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
 
 <div class="contain-to-grid">
 	<!-- Starting the Top-Bar -->
@@ -79,60 +79,14 @@
 	<!-- End of Top-Bar -->
 </div>
 
-<!-- <header class="row" role="banner">
-	<div class="small-12 columns">
-		<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-		<h4 class="subheader"><?php bloginfo('description'); ?></h4>
-		<hr/>
-	</div>
-</header> -->
 
-<header class="main">
-	<div class="row">
-		<div class="large-5 columns"></div>
-		<div class="large-7 columns">
-			<div class="main-text">
-				<h2 class="subheader">Consultoria en salud ocupacional, gestión ambiental, sistemas de gestión y mejoramiento contínuo</h2>
-				<a href="#" class="button small arrow"> Ver video</a> 
-			</div>
-		</div>
-	</div>
-	<div class="row">
+<header class="main internal">
+	<div class="row"> 
 		<div class="large-12 columns">
-			<div class="banner">
-				<ul class="large-block-grid-4 it">
-					<li> 
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/mata.jpg" width="245" height="246" alt="Mata">
-					</li>
-					<li class="blue">
-						<a href="/"><h3 class="subheader whitetxt">Nuestra Empresa</h3></a>
-					</li>
-					<li>
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/obrera.jpg" width="246" height="246" alt="Obrera">
-					</li>
-					<li class="green">
-						<a href="/"><h3 class="subheader whitetxt">Aplicativo HAZMAT</h3></a>
-						<p>Non pulvinar ante sem vitae turpis. Cras egestas et elit fermentum pretium. Vivamus fermentum </p>
-						<a href="#"><small class="whitetxt">Ingresar ></small></a>
-					</li>
-					<li class="orange">
-						<a href=""><h3 class="subheader whitetxt">Nuestros Servicios</h3></a>
-					</li>
-					<li>
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/people.jpg" width="245" height="245" alt="People">
-					</li>
-					<li class="red">
-						<a href=""><h3 class="subheader whitetxt">Blog</h3></a>
-					</li>
-					<li>
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/hand.jpg" width="245" height="245" alt="Hand">
-					</li>
-				</ul>
-			</div>
+				<h2 class="inner-title">Nuestra empresa</h2> 
 		</div>
-	</div>
 </header>
 
 <!-- Start the main container -->
-<section class="container" role="document">
+<section class="container internalbg" role="document">
 	<div class="row">

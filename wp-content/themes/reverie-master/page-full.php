@@ -3,15 +3,15 @@
 Template Name: Full Width
 */
 get_header(); ?>
-
-
-<!-- Row for main content area -->
+	
+<!-- Row for main content area page-full -->
 	<div class="small-12 large-12 columns" role="main">
-		
 		<div class="row">
 			<div class="large-3 columns">
-				<h1 class="no-margin">Blog</h1>
-				<a href="#">Ver todas las noticias ></a>
+				<div class="pd-10">
+					<h2 class="subheader">Blog</h2>
+					<a href="#">Ver todas las noticias ></a>
+				</div>
 			</div>
 			<?php
 			$args = array( 'numberposts' => 3 );
@@ -19,7 +19,7 @@ get_header(); ?>
 			foreach($lastposts as $post) : setup_postdata($post); ?>
 			<div class="large-3 columns">
 				<p><?php echo substr(get_the_excerpt(), 0,90); ?></p>
-				<h6 class="subheader"><?php the_date(); ?></h6>
+				<h6 class="subheader graytxt date"><?php the_date(); ?></h6>
 			</div>
 			<?php endforeach; ?>
 		</div>	
@@ -39,10 +39,10 @@ get_header(); ?>
 				<p><?php the_tags(); ?></p>
 			</footer>
 		</article>
-	<?php endwhile; // End the loop ?>
+	<?php endwhile; // End the loop ?> 
 	
-	<ul class="inline-list">
-		<li><a href="#">Conectate con nosotros</a></li>
+	<ul class="inline-list connect">
+		<li class="active"><a href="#">Conectate con nosotros</a></li>
 		<li><a href="#"><span class="face"></span>Facebook</a></li>
 		<li><a href="#"><span class="twitter"></span> Twitter</a></li>
 		<li><a href="#"><span class="linkdn"></span> Linkdkn</a></li>
