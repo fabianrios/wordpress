@@ -133,6 +133,5 @@
 	</div>
 </header>
 
-<!-- Start the main container -->
 <section class="container" role="document">
 	<div class="row">

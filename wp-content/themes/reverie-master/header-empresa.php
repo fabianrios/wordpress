@@ -79,14 +79,14 @@
 	<!-- End of Top-Bar -->
 </div>
 
-
-<header class="main internal">
+<header class="internal">
 	<div class="row"> 
 		<div class="large-12 columns">
-				<h2 class="inner-title">Nuestra empresa</h2> 
+			<h2 class="inner-title">Nuestra empresa</h2> 
 		</div>
+	</div>	
 </header>
 
 <!-- Start the main container -->
-<section class="container internalbg" role="document">
-	<div class="row">
+<section class="container" role="document">
+	<div class="row main-container collapse">

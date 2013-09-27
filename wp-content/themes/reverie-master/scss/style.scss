@@ -21,6 +21,13 @@
 	@include transition-duration(0.2s);
 }
 
+//VARIABLES
+$blueish:#061D35;
+
+body.home{
+	background: #fff;
+}
+
 // add some extra style to row to beautify custom background image
 header.row,
 .container.row,
@@ -174,19 +181,20 @@ header.main{
 	background: #E7E8DE url('../img/home.png') no-repeat scroll top center;
 	width: 100%;
 	height: 666px;
-	-webkit-background-size: cover;
-	background-size: cover;
-	&.internal{
-		position: relative;
-		background: url('../img/bg-internal.png') no-repeat scroll top center;
-		height: 202px; 
-		.inner-title{
-			position: absolute;
-			bottom: 0;
-			right: 0;
-		}
-	}
 }
+
+header.internal{
+    position: relative;
+    background: url('../img/bg-internal.png') no-repeat scroll top center;
+    height: 152px; 
+    .inner-title{
+      position:relative;
+	  float: right;
+	  top: 80px;
+	  font-weight: 200;
+	  color: $blueish;
+    }
+  }
 
 .top-bar-section > ul > .divider{
 	border-right: solid 1px white;
@@ -318,7 +326,7 @@ a.button{
 }
 
 .connect{
-	margin-top: 40px;
+	margin-bottom: 0;
 	li{
 		height: 60px;
 		line-height: 60px;
@@ -379,11 +387,69 @@ a.button{
 }
 
 
+//MAIN-CONTAINER
+
+.main-container{
+	background: #fff;
+}
+
+.thepadding{
+	padding: 0 20px;
+}
+
+.contact{
+	h6{
+		margin: 30px 0 5px 0;
+		strong{
+			font-weight: normal;
+			color: $blueish;
+		}
+	}
+	ul{
+		margin-left: -10px;
+		li{
+			font-size: 12px;
+			span{
+				background: url('../img/contacto.png') no-repeat scroll top center;
+				width: 26px;
+				height: 26px;
+				display: inline-block;
+				position: relative;
+				top: 9px;
+				&.mail{
+					background-position: 0 0;
+				}
+				&.phone{
+					background-position: 0 -30px;
+				}
+				&.skype{
+					background-position: 0 -60px;
+				}
+			}
+		}
+	}
+}
+
+.mt-30{
+	margin-top: 30px;
+}
+
+.blog-update{
+	border-top: 1px solid #E6E6E6;
+	padding: 30px 0;
+	p{
+		color: #474747;
+	}
+}
+///MAIN-CONTAINER
+
 
 footer{
-	position: relative;
-	top: 50px;
+	padding: 50px 0;
 	ul{
 		list-style-type: none;
+		li{
+			font-size: 90%;
+		}
 	}
 }
